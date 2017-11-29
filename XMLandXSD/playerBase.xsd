@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cricketPlayerBase">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="about">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="title"/>
+                            <xs:element name="author"/>
+                            <xs:element ref="description"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="cricketPlayers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="cricketPlayer" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="title"/>
+                                        <xs:element ref="description"/>
+                                        <xs:element name="photos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="unbounded" name="photo">
+                                                  <xs:complexType>
+                                                  <xs:attribute ref="id"/>
+                                                  <xs:attribute name="fileName" type="xs:anyURI"/>
+                                                  <xs:attribute name="caption"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="age"/>
+                                        <xs:element name="gender">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="Male"/>
+                                                  <xs:enumeration value="Female"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="nationalSide">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="India"/>
+                                                  <xs:enumeration value="England"/>
+                                                  <xs:enumeration value="Australia"/>
+                                                  <xs:enumeration value="Bangladesh"/>
+                                                  <xs:enumeration value="New Zealand"/>
+                                                  <xs:enumeration value="Pakistan"/>
+                                                  <xs:enumeration value="South Africa"/>
+                                                  <xs:enumeration value="Sri Lanka"/>
+                                                  <xs:enumeration value="West Indies"/>
+                                                  <xs:enumeration value="Canada"/>
+                                                  <xs:enumeration value="Ireland"/>
+                                                  <xs:enumeration value="Kenya"/>
+                                                  <xs:enumeration value="USA"/>
+                                                  <xs:enumeration value="UAE"/>
+                                                  <xs:enumeration value="Afghanistan"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="teamsPlayedFor">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="team" maxOccurs="unbounded">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element name="teamName"/>
+                                                  </xs:sequence>
+                                                  <xs:attribute ref="id"/>
+                                                  <xs:attribute name="league"/>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="playingRole"/>
+                                        <xs:element name="battingStyle">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="Right Handed"/>
+                                                  <xs:enumeration value="Left Handed"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="bowlingStyle"/>
+                                        <xs:element name="gameStats">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="matchesPlayed"/>
+                                                  <xs:element name="inningsPlayed"/>
+                                                  <xs:element name="battingAverages">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element name="runs"/>
+                                                  <xs:element name="centuries"/>
+                                                  <xs:element name="halfCenturies"/>
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="bowlingAverages">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element name="wickets"/>
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="fieldingAverages">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element name="catches"/>
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="sources">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="unbounded"
+                                                  name="sourceRefId" type="xs:IDREF"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="relatedPlayers">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="unbounded"
+                                                  ref="playerRefId"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute ref="id" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element minOccurs="0" name="sources">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" minOccurs="0" name="source">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name"/>
+                                        <xs:element name="url"/>
+                                        <xs:element ref="description"/>
+                                    </xs:sequence>
+                                    <xs:attribute ref="id"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="regions">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" ref="region"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="keywords">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="keyword">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element ref="title"/>
+                                        <xs:element maxOccurs="unbounded" minOccurs="0"
+                                            ref="playerRefId"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="sequences">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="sequence">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" ref="playerRefId"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="title"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="title"/>
+    <xs:element name="description">
+        <xs:complexType>
+            <xs:group maxOccurs="unbounded" ref="block"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:attribute name="id" type="xs:ID"/>
+    <xs:element name="region">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" name="playerRefId" type="xs:IDREF"/>
+                <xs:element maxOccurs="unbounded" minOccurs="0" ref="region"/>
+            </xs:sequence>
+            <xs:attribute ref="id"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:group name="block">
+        <xs:choice>
+            <xs:element ref="p"/>
+            <xs:element ref="ul"/>
+            <xs:element ref="ol"/>
+            <xs:element ref="br"/>
+            <xs:element ref="table"/>
+            <xs:element name="media">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="title"/>
+                        <xs:element minOccurs="0" name="caption">
+                            <xs:complexType mixed="true">
+                                <xs:group ref="inline"/>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute ref="id" use="required"/>
+                    <xs:attribute name="url" type="xs:string" use="required"/>
+                    <xs:attribute name="type" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <xs:enumeration value="imageWeb"/>
+                                <xs:enumeration value="imageLocal"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="style" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element ref="editor"/>
+        </xs:choice>
+    </xs:group>
+    <xs:element name="li">
+        <xs:complexType mixed="true">
+            <xs:group maxOccurs="unbounded" minOccurs="0" ref="inline"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="p">
+        <xs:complexType mixed="true">
+            <xs:group maxOccurs="unbounded" minOccurs="0" ref="inline"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element fixed="" name="br" nillable="true"/>
+    <xs:element name="hr"/>
+    <xs:element name="ul">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="li"/>
+                <xs:element minOccurs="0" ref="ul"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ol">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element maxOccurs="unbounded" ref="li"/>
+                <xs:element minOccurs="0" ref="ol"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="table">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded" minOccurs="0">
+                <xs:element maxOccurs="unbounded" name="tr">
+                    <xs:complexType mixed="false">
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="td">
+                                <xs:complexType mixed="true">
+                                    <xs:choice maxOccurs="unbounded">
+                                        <xs:group ref="block"/>
+                                    </xs:choice>
+                                    <xs:attribute name="style" type="xs:string" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="style" type="xs:string" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="border" type="xs:string" use="optional"/>
+            <xs:attribute name="cellSpacing" type="xs:string" use="optional"/>
+            <xs:attribute name="cellPadding" type="xs:string" use="optional"/>
+            <xs:attribute name="style" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="editor">
+        <xs:complexType mixed="true">
+            <xs:attribute name="showEdits" type="xs:boolean"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:group name="inline">
+        <xs:choice>
+            <xs:element minOccurs="0" ref="b"/>
+            <xs:element minOccurs="0" ref="i"/>
+            <xs:element minOccurs="0" ref="u"/>
+            <xs:element minOccurs="0" ref="xref"/>
+            <xs:element minOccurs="0" name="pubMentioned"/>
+        </xs:choice>
+    </xs:group>
+    <xs:element name="i"/>
+    <xs:element name="b"/>
+    <xs:element name="u"/>
+    <xs:element name="xref">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="xrefText">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="hotText"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute ref="id" use="required"/>
+            <xs:attribute name="type" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="off"/>
+                        <xs:enumeration value="web"/>
+                        <xs:enumeration value="local"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="dest" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="playerRefId" type="xs:IDREF"/>
+</xs:schema>

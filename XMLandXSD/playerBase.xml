@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cricketPlayerBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="playerBase.xsd">
+    <about>
+        <title>Cricket Player Information System</title>
+        <author>Rajendran Seetharaman</author>
+        <description>
+            <p>This is a <b>cricket player</b> info system which gives the following <i>information</i> about a cricket player
+            </p>
+            <ol>
+                <li>The demographic information about the player like nationality, playing role, batting, and bowling styles</li>
+                <li>The match statistics for the player like number of matches playes, runs scored, and wickets taken.</li>
+            </ol>
+            <p>My motive behind developing this system was that it could be used by avid cricket followers to look up information about their favorite player organized in a useful manner.</p>
+        </description>
+    </about>
+    <cricketPlayers>
+        <cricketPlayer id="p1">
+            <title>Mahendra Singh Dhoni</title>
+            <description>
+                <p><u><b>India <i>Wicketkeeper batsman</i></b></u></p>
+                <p><u>Career Highlights</u></p>
+                <ul>
+                    <li>MS Dhoni is arguably the most popular and definitely the most scrutinised cricketer from India.</li>
+                    <li>Under Dhoni's captaincy, India have won the top prize in all formats.</li>
+                    <li>India had the No.1 Test ranking in December 2009, the 50-over World Cup in 2011 and the <pubMentioned>World Twenty20</pubMentioned> on his captaincy debut in 2007</li>
+                </ul>
+                <br></br>
+                <ol>
+                    <li>ICC One-Day Player of the Year 2008</li>
+                    <li>ICC One-Day Player of the Year 2009</li>
+                    <li>ICC Spirit of Cricket Award 2011</li>
+                    <li>LG People's Choice Award 2013</li>
+                </ol>
+                <br></br>
+                <editor showEdits="true">ESPNCricInfo</editor>
+            </description>
+            <photos>
+                <photo id="ph1" fileName="MSD.jpg" />
+            </photos>
+            <age>36</age>
+            <gender>Male</gender>
+            <nationalSide>India</nationalSide>
+            <playingRole>Wicketkeeper batsman</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm medium</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>1500</matchesPlayed>
+                <inningsPlayed>2300</inningsPlayed>
+                <battingAverages>
+                    <runs>20000</runs>
+                    <centuries>50</centuries>
+                    <halfCenturies>150</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>10</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>1000</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_IND</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p2</playerRefId>
+                <playerRefId>p7</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p2">
+            <title>Ravichandran Ashwin</title>
+            <description><p>India bowling allrounder</p></description>
+            <photos>
+                <photo id="ph2" fileName="RA.jpg" />
+            </photos>
+            <age>31</age>
+            <gender>Male</gender>
+            <nationalSide>India</nationalSide>
+            <playingRole>Bowling allrounder</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm offbreak</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>700</matchesPlayed>
+                <inningsPlayed>1200</inningsPlayed>
+                <battingAverages>
+                    <runs>5000</runs>
+                    <centuries>20</centuries>
+                    <halfCenturies>50</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>900</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>300</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_IND</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p3</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p3">
+            <title>Shikhar Dhawan</title>
+            <description><p>India opening batsman</p></description>
+            <photos>
+                <photo id="ph3" fileName="SD.jpg" />
+            </photos>
+            <age>31</age>
+            <gender>Male</gender>
+            <nationalSide>India</nationalSide>
+            <playingRole>Opening batsman</playingRole>
+            <battingStyle>Left Handed</battingStyle>
+            <bowlingStyle>Right-arm offbreak</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>560</matchesPlayed>
+                <inningsPlayed>900</inningsPlayed>
+                <battingAverages>
+                    <runs>15000</runs>
+                    <centuries>200</centuries>
+                    <halfCenturies>300</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>15</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>250</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_IND</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p1</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p4">
+            <title>Kedar Mahadav Jadhav</title>
+            <description><p>Indian batsman</p></description>
+            <photos>
+                <photo id="ph4" fileName="KMJ.jpg" />
+            </photos>
+            <age>32</age>
+            <gender>Male</gender>
+            <nationalSide>India</nationalSide>
+            <playingRole>Batsman</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm offbreak</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>200</matchesPlayed>
+                <inningsPlayed>300</inningsPlayed>
+                <battingAverages>
+                    <runs>6000</runs>
+                    <centuries>45</centuries>
+                    <halfCenturies>60</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>15</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>200</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_IND</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p3</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p5">
+            <title>Kuldeep Yadav</title>
+            <description><p>Indian bowler</p></description>
+            <photos>
+                <photo id="ph5" fileName="KY.jpg" />
+            </photos>
+            <age>22</age>
+            <gender>Male</gender>
+            <nationalSide>India</nationalSide>
+            <playingRole>Bowler</playingRole>
+            <battingStyle>Left Handed</battingStyle>
+            <bowlingStyle>Slow left-arm chinaman</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>150</matchesPlayed>
+                <inningsPlayed>200</inningsPlayed>
+                <battingAverages>
+                    <runs>4000</runs>
+                    <centuries>40</centuries>
+                    <halfCenturies>55</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>45</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>150</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_IND</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p3</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p6">
+            <title>Jasprit Jasbirsingh Bumrah</title>
+            <description><p>Indian bowler</p></description>
+            <photos>
+                <photo id="ph6" fileName="JJB.jpg" />
+            </photos>
+            <age>22</age>
+            <gender>Male</gender>
+            <nationalSide>India</nationalSide>
+            <playingRole>Bowler</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm medium</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>200</matchesPlayed>
+                <inningsPlayed>250</inningsPlayed>
+                <battingAverages>
+                    <runs>5000</runs>
+                    <centuries>45</centuries>
+                    <halfCenturies>55</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>60</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>170</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_IND</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p4</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p7">
+            <title>Virat Kohli</title>
+            <description><p>Indian captain and batsman</p></description>
+            <photos>
+                <photo id="ph7" fileName="VK.jpg" />
+            </photos>
+            <age>28</age>
+            <gender>Male</gender>
+            <nationalSide>India</nationalSide>
+            <playingRole>Batsman</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm medium</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>1000</matchesPlayed>
+                <inningsPlayed>1500</inningsPlayed>
+                <battingAverages>
+                    <runs>25000</runs>
+                    <centuries>300</centuries>
+                    <halfCenturies>550</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>25</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>300</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_IND</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p1</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p8">
+            <title>Corey James Anderson</title>
+            <description><p>NZ batsman</p></description>
+            <photos>
+                <photo id="ph8" fileName="CJA.jpg" />
+            </photos>
+            <age>26</age>
+            <gender>Male</gender>
+            <nationalSide>New Zealand</nationalSide>
+            <playingRole>Batsman</playingRole>
+            <battingStyle>Left Handed</battingStyle>
+            <bowlingStyle>Left-arm medium-fast</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>500</matchesPlayed>
+                <inningsPlayed>700</inningsPlayed>
+                <battingAverages>
+                    <runs>5000</runs>
+                    <centuries>100</centuries>
+                    <halfCenturies>200</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>80</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>250</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_NZ</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p9</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p9">
+            <title>Neil Trevor Broom</title>
+            <description><p>NZ batsman</p></description>
+            <photos>
+                <photo id="ph9" fileName="NTB.jpg" />
+            </photos>
+            <age>33</age>
+            <gender>Male</gender>
+            <nationalSide>New Zealand</nationalSide>
+            <playingRole>Middle order Batsman</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm medium</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>400</matchesPlayed>
+                <inningsPlayed>600</inningsPlayed>
+                <battingAverages>
+                    <runs>3000</runs>
+                    <centuries>50</centuries>
+                    <halfCenturies>80</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>40</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>150</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_NZ</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p11</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p10">
+            <title>Colin de Grandhomme</title>
+            <description><p>NZ allrounder</p></description>
+            <photos>
+                <photo id="ph10" fileName="CDG.jpg" />
+            </photos>
+            <age>31</age>
+            <gender>Male</gender>
+            <nationalSide>New Zealand</nationalSide>
+            <playingRole>Allrounder</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm medium fast</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>400</matchesPlayed>
+                <inningsPlayed>600</inningsPlayed>
+                <battingAverages>
+                    <runs>7000</runs>
+                    <centuries>100</centuries>
+                    <halfCenturies>120</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>150</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>200</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_NZ</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p9</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p11">
+            <title>Matthew James Henry</title>
+            <description><p>NZ bowler</p></description>
+            <photos>
+                <photo id="ph11" fileName="MJH.jpg" />
+            </photos>
+            <age>25</age>
+            <gender>Male</gender>
+            <nationalSide>New Zealand</nationalSide>
+            <playingRole>bowler</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm medium fast</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>300</matchesPlayed>
+                <inningsPlayed>500</inningsPlayed>
+                <battingAverages>
+                    <runs>1500</runs>
+                    <centuries>50</centuries>
+                    <halfCenturies>110</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>300</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>300</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_NZ</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p12</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p12">
+            <title>Adam Fraser Milne</title>
+            <description><p>NZ bowler</p></description>
+            <photos>
+                <photo id="ph12" fileName="AFM.jpg" />
+            </photos>
+            <age>25</age>
+            <gender>Male</gender>
+            <nationalSide>New Zealand</nationalSide>
+            <playingRole>bowler</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm medium fast</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>400</matchesPlayed>
+                <inningsPlayed>600</inningsPlayed>
+                <battingAverages>
+                    <runs>1200</runs>
+                    <centuries>40</centuries>
+                    <halfCenturies>130</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>350</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>70</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_NZ</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p8</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p13">
+            <title>Henry Michael Nicholls</title>
+            <description><p>NZ batsman</p></description>
+            <photos>
+                <photo id="ph13" fileName="HMN.jpg" />
+            </photos>
+            <age>25</age>
+            <gender>Male</gender>
+            <nationalSide>New Zealand</nationalSide>
+            <playingRole>Top-order batsman</playingRole>
+            <battingStyle>Left Handed</battingStyle>
+            <bowlingStyle>Right-arm offbreak</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>200</matchesPlayed>
+                <inningsPlayed>300</inningsPlayed>
+                <battingAverages>
+                    <runs>7000</runs>
+                    <centuries>30</centuries>
+                    <halfCenturies>60</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>35</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>75</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_NZ</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p10</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p14">
+            <title>Seth Hayden Arnold Rance</title>
+            <description><p>NZ batsman</p></description>
+            <photos>
+                <photo id="ph14" fileName="SHAR.jpg" />
+            </photos>
+            <age>30</age>
+            <gender>Male</gender>
+            <nationalSide>New Zealand</nationalSide>
+            <playingRole>batsman</playingRole>
+            <battingStyle>Right Handed</battingStyle>
+            <bowlingStyle>Right-arm medium fast</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>150</matchesPlayed>
+                <inningsPlayed>250</inningsPlayed>
+                <battingAverages>
+                    <runs>700</runs>
+                    <centuries>10</centuries>
+                    <halfCenturies>25</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>10</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>25</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_NZ</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p12</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+        <cricketPlayer id="p15">
+            <title>Mitchell Josef Santner</title>
+            <description><p>NZ bowler</p></description>
+            <photos>
+                <photo id="ph15" fileName="MJS.jpg" />
+            </photos>
+            <age>25</age>
+            <gender>Male</gender>
+            <nationalSide>New Zealand</nationalSide>
+            <playingRole>Bowling allrounder</playingRole>
+            <battingStyle>Left Handed</battingStyle>
+            <bowlingStyle>Slow left-arm orthodox</bowlingStyle>
+            <gameStats>
+                <matchesPlayed>300</matchesPlayed>
+                <inningsPlayed>500</inningsPlayed>
+                <battingAverages>
+                    <runs>2000</runs>
+                    <centuries>10</centuries>
+                    <halfCenturies>25</halfCenturies>
+                </battingAverages>
+                <bowlingAverages>
+                    <wickets>300</wickets>
+                </bowlingAverages>
+                <fieldingAverages>
+                    <catches>50</catches>
+                </fieldingAverages>
+            </gameStats>
+            <sources>
+                <sourceRefId>ESPN_NZ</sourceRefId>
+            </sources>
+            <relatedPlayers>
+                <playerRefId>p9</playerRefId>
+            </relatedPlayers>
+        </cricketPlayer>
+    </cricketPlayers>
+    <sources>
+        <source id="ESPN_IND">
+            <name>ESPN CricInfo India Players</name>
+            <url>http://www.espncricinfo.com/india/content/player/country.html?country=6</url>
+            <description><p>Indian Cricket Players listing</p></description>
+        </source>
+        <source id="ESPN_NZ">
+            <name>ESPN CricInfo New Zealand Players</name>
+            <url>http://www.espncricinfo.com/newzealand/content/player/country.html?country=5</url>
+            <description><p>NZ Cricket Players listing</p></description>
+        </source>
+    </sources>
+    
+<regions>
+    <region>
+        <title>Americas</title>
+        <region>
+            <title>North America</title>
+            <region>
+                <title>USA</title>
+            </region>
+            <region>
+                <title>Canada</title>
+            </region>
+            <region>
+                <title>West Indies</title>
+            </region>
+        </region>
+        <region>
+            <title>South America</title>
+        </region>
+    </region>
+    <region>
+        <title>Europe</title>
+        <region>
+            <title>England</title>
+        </region>
+        <region>
+            <title>Ireland</title>
+        </region>
+    </region>
+    <region>
+        <title>Asia</title>
+        <region>
+            <title>South Asia</title>
+            <region>
+                <title>India</title>
+                <playerRefId>p1</playerRefId>
+                <playerRefId>p2</playerRefId>
+                <playerRefId>p3</playerRefId>
+                <playerRefId>p4</playerRefId>
+                <playerRefId>p5</playerRefId>
+                <playerRefId>p6</playerRefId>
+                <playerRefId>p7</playerRefId>
+            </region>
+            <region>
+                <title>Pakistan</title>
+            </region>
+            <region>
+                <title>Bangladesh</title>
+            </region>
+            <region>
+                <title>Sri Lanka</title>
+            </region>
+            
+        </region>
+        <region>
+            <title>Central and Middle East</title>
+            <region>
+                <title>UAE</title>
+            </region>
+            <region>
+                <title>Afghanistan</title>
+            </region>
+            
+        </region>
+    </region>
+    <region>
+        <title>Australias</title>
+        <region>
+            <title>Australia</title>
+        </region>
+        <region>
+            <title>New Zealand</title>
+            <playerRefId>p8</playerRefId>
+            <playerRefId>p9</playerRefId>
+            <playerRefId>p10</playerRefId>
+            <playerRefId>p11</playerRefId>
+            <playerRefId>p12</playerRefId>
+            <playerRefId>p13</playerRefId>
+            <playerRefId>p14</playerRefId>
+            <playerRefId>p15</playerRefId>
+        </region>
+    </region>
+    <region>
+        <title>Africa</title>
+        <region>
+            <title>South Africa</title>
+        </region>
+        <region>
+            <title>Kenya</title>
+        </region>
+    </region>
+</regions>
+    
+<keywords>
+    <keyword>
+        <title>A</title>
+        <playerRefId>p12</playerRefId>
+    </keyword>
+    <keyword>
+        <title>B</title>
+    </keyword>
+    <keyword>
+        <title>C</title>
+        <playerRefId>p8</playerRefId>
+        <playerRefId>p10</playerRefId>
+    </keyword>
+    <keyword>
+        <title>D</title>
+    </keyword>
+    <keyword>
+        <title>E</title>
+    </keyword>
+    <keyword>
+        <title>F</title>
+    </keyword>
+    <keyword>
+        <title>G</title>
+    </keyword>
+    <keyword>
+        <title>H</title>
+        <playerRefId>p13</playerRefId>
+    </keyword>
+    <keyword>
+        <title>I</title>
+    </keyword>
+    <keyword>
+        <title>J</title>
+        <playerRefId>p6</playerRefId>
+    </keyword>
+    <keyword>
+        <title>K</title>
+        <playerRefId>p4</playerRefId>
+        <playerRefId>p5</playerRefId>
+    </keyword>
+    <keyword>
+        <title>L</title>
+    </keyword>
+    <keyword>
+        <title>M</title>
+        <playerRefId>p1</playerRefId>
+        <playerRefId>p11</playerRefId>
+        <playerRefId>p15</playerRefId>
+    </keyword>
+    <keyword>
+        <title>N</title>
+        <playerRefId>p9</playerRefId>
+    </keyword>
+    <keyword>
+        <title>O</title>
+    </keyword>
+    <keyword>
+        <title>P</title>
+    </keyword>
+    <keyword>
+        <title>Q</title>
+    </keyword>
+    <keyword>
+        <title>R</title>
+        <playerRefId>p2</playerRefId>
+    </keyword>
+    <keyword>
+        <title>S</title>
+        <playerRefId>p3</playerRefId>
+        <playerRefId>p14</playerRefId>
+    </keyword>
+    <keyword>
+        <title>T</title>
+    </keyword>
+    <keyword>
+        <title>U</title>
+    </keyword>
+    <keyword>
+        <title>V</title>
+        <playerRefId>p7</playerRefId>
+    </keyword>
+    <keyword>
+        <title>W</title>
+    </keyword>
+    <keyword>
+        <title>X</title>
+    </keyword>
+    <keyword>
+        <title>Y</title>
+    </keyword>
+    <keyword>
+        <title>Z</title>
+    </keyword>
+</keywords>      
+<sequences>
+    <sequence title="Players by Popularity score">
+        <playerRefId>p1</playerRefId>
+        <playerRefId>p7</playerRefId>
+        <playerRefId>p2</playerRefId>
+        <playerRefId>p8</playerRefId>
+        <playerRefId>p6</playerRefId>
+        <playerRefId>p9</playerRefId>
+        <playerRefId>p3</playerRefId>
+        <playerRefId>p4</playerRefId>
+        <playerRefId>p5</playerRefId>
+        <playerRefId>p10</playerRefId>
+        <playerRefId>p12</playerRefId>
+        <playerRefId>p11</playerRefId>
+        <playerRefId>p13</playerRefId>
+        <playerRefId>p15</playerRefId>
+        <playerRefId>p12</playerRefId>
+    </sequence>
+</sequences>    
+</cricketPlayerBase>
